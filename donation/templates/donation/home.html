@@ -1,0 +1,101 @@
+{% extends 'donation/base.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+
+
+<div id="templatemo_body_wrapper">
+    <div id="templatemo_wrapper">
+
+        <div id="templatemo_header">
+
+            <div id="site_title">
+                <h1><a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a></h1>
+            </div>
+
+            <div id="templatemo_menu">
+                <ul>
+                    <li><a href="{% url 'home' %}" class="current">Home</a></li>
+                    <li><a href="{% url 'donation' %}">Donate</a></li>
+                    <li><a href="{% url 'persons_list' %}">List</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+                <div class="cleaner"></div>
+            </div>
+            <!-- end of templatemo_menu -->
+
+            <div class="cleaner"></div>
+        </div>
+
+        <div id="templatemo_middle">
+            <div id="mid_img_wrap">
+                <span></span>
+                <img style="width:375px;height:180px" src="{% static 'donation/images/templatemo_image_01.jpg' %}" alt="connection" />
+            </div>
+            <div id="mid_right">
+                <div id="mid_title">DONATION</div>
+                <p>It does not matter how much we donate; it matters whether the donation is meaningful. How to define meaningful? Let society and history judge.
+                    
+                </p>
+                <a class="more1 float_r" href="#"></a>
+            </div>
+        </div>
+
+        <div id="templatemo_main">
+
+            
+
+            <div class="col_w960">
+                <h2>About Us</h2>
+                <p align="justify">Daan is  charitable trust  which works in hajipur local area it  is founded in year 2015.
+                    and since then we are helping the people who are around us we help in some ways like we give
+                food every day we share colthes to the poor people who can not afford and we also teach children . Due to COVID-19
+            everything has come online    </p>
+                <div class="cleaner"></div>
+            </div>
+
+            <div class="col_w960 col_w960_last">
+                <h2>Where does Fund goes</h2>
+                <p align="justify">the all fund we receive we take on a charity account we also share all detail regarding how many money 
+                    we get and who has denoted to our website you can see all the detail on list button . 
+                </p>
+                
+            </div>
+
+            <div class="cleaner"></div>
+        </div>
+        <!-- end of main -->
+
+        <div class="cleaner"></div>
+    </div>
+    <!-- end of wrapper -->
+    <div class="cleaner"></div>
+</div>
+<!-- end of body wrapper -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
+{% endblock %}

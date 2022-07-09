@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>daan</title>
+    <meta name="keywords" content="connection, blue, free website template, CSS, HTML" />
+    <meta name="description" content="Connection - free website template provided by templatemo.com" />
+    <link href="{% static 'donation/templatemo_style.css' %}" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+  
+  
+
+
+  
+  
+  {% block content %}
+
+
+
+
+
+
+
+
+
+  {% endblock content %}
+
+  <div id="templatemo_footer_wrapper">
+    <div id="templatemo_footer">
+
+        <div class="col_allw300">
+            <div class="footer_title">
+                <img src="{% static 'donation/images/newsletter.png' %}" alt="icons" />
+                <h5>SUBSCRIBE</h5>
+                GET NEWSLETTERS </div>
+            <form action="#" method="post">
+                <input type="text" id="newsletter_input" name="email" />
+                <input type="submit" name="submit" id="newsletter_submit" value=" Subscribe " />
+            </form>
+        </div>
+
+        <div class="col_allw300">
+            <div class="footer_title twitter">
+                <img src="{% static 'donation/images/twitter.png' %}" alt="icons" />
+                <h5>FOLLOW US</h5>
+                <p>ON TWITTER</p>
+              
+            </div>
+            <ul>
+              <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'home' %}">Donate</a></li>
+              <li><a href="{% url 'home' %}">Contact</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="col_allw300 col_last">
+            <div class="footer_title">
+                <img src="{% static 'donation/images/mail.png' %}" alt="icons" />
+                <h5>EMAIL</h5>
+                CONTACT US </div>
+            <p> Nehru Nagar , Mahua road , hajipur , pin code 844101.</p>
+            Tel: 889-783-0032<br /> Tel: 980-543-0098<br /> Email: <a href="#">daan@gmail.com</a> </div>
+
+        <div class="cleaner"></div>
+    </div>
+    <!-- end of footer -->
+
+    <div id="copyright">
+
+        Copyright © 2021 <a href="#">Daan</a>
+
+    </div>
+    <!-- end of templatemo_footer -->
+</div>
+<!-- end of footer wrapper -->
+
+
+  
+</body>
+</html>

@@ -1,0 +1,74 @@
+{% extends 'donation/base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+      
+</style>
+<div class="container">
+  
+    <div>
+        <h3>COVID-19</h3>
+        <h3>Online Donation Form</h3>
+        <p>We invite you to make a contribution and support us as we battle the impact that Coronavirus has had on our community. All proceeds will go to our general COVID-19 Fund, and from there our taskforce will decide how to best distribute the funds to ensure they go where most needed</p>
+    </div>
+    <div>
+        <form action="/process-payment/" id="form" method="post">
+            {% csrf_token %}
+        <label for="fname">Name</label>
+        <input required type="text" id="name" name="name" placeholder="Your name..">
+    
+        <label for="lname">Phone No</label>
+        <input required type="text" id="phone" name="phone" placeholder="Your Phone No..">
+    
+        <label for="email">Email</label>
+        <input required type="text" id="email" name="email" placeholder="Your Email..">
+        
+        <label for="address">Address</label>
+        <input required type="text" id="address" name="address" placeholder="Your address..">
+        
+        <label for="amount">How much would you like to donate?</label>
+        <input required type="text" id="amount" name="amount" placeholder="Your amount..">
+
+        <input type="submit" value="Submit">
+       
+        </form>
+        
+
+    </div>
+    
+</div>
+
+{% endblock %}
